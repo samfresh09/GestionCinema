@@ -30,4 +30,6 @@ public class Film {
     private Date dateSortie;
     @OneToMany(mappedBy = "film")
     private Collection<Projection> projections;
+    @ManyToOne
+    private  Categorie categorie;
 }

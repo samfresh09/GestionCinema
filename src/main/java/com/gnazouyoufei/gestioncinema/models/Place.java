@@ -21,6 +21,6 @@ public class Place {
     private  double altitude;
     @ManyToOne
     private  Salle salle;
-    @OneToMany(mappedBy = "salle")
+    @OneToMany(mappedBy = "place")
     private Collection<Ticket> tickets;
 }
