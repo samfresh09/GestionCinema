@@ -5,7 +5,7 @@ import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-import java.util.Collection;
+import java.util.Collections;
 
 @Entity
 @Data
@@ -24,5 +24,5 @@ public class Ville {
     @Column(nullable = false)
     private double altitude;
     @OneToMany(mappedBy = "ville")
-    private Collection<Cinema> cinemas;
+    private Collections<Cinema> cinemas;
 }
